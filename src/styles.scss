@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+header, .filters {
+  padding: 20px;
+}
+
+.child-okr-list {
+  list-style-type: lower-alpha;
+}
+
+ul.okr-list {
+  list-style-type: none;
+  padding-left: 30px;
+  li {
+    padding: 20px;
+    .arrow {
+      margin-right: 20px;
+    }
+  }
+}
+
+.okr-chunk {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+select {
+  margin-left: 20px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+  &:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.okr-title {
+  display: flex;
+}
